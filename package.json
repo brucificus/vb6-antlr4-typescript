@@ -1,0 +1,19 @@
+{
+  "name": "vb6-antlr4",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brucificus/vb6-antlr4-typescript.git"
+  },
+  "author": "Bruce Markham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brucificus/vb6-antlr4-typescript/issues"
+  },
+  "homepage": "https://github.com/brucificus/vb6-antlr4-typescript#readme"
+}
