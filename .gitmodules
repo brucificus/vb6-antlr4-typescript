@@ -1,0 +1,3 @@
+[submodule "proleap-vb6"]
+	path = proleap-vb6
+	url = https://github.com/uwol/proleap-vb6-parser.git

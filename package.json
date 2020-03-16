@@ -22,8 +22,8 @@
     "type": "git",
     "url": "https://github.com/brucificus/vb6-antlr4-typescript.git"
   },
-  "author": "Bruce Markham",
-  "license": "ISC",
+  "author": "Ulrich Wolffgang, Bruce Markham",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/brucificus/vb6-antlr4-typescript/issues"
   },
