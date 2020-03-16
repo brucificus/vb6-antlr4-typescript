@@ -15,7 +15,8 @@
     "build": "npm run build.cpygrammars && npm run build.antlr4ts && npm run build.tsc",
     "prepublishOnly": "npm run build && npm run test",
     "postversion": "git push && git push --tags",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release --debug",
+    "semantic-release-dry-run": "semantic-release --dry-run --debug"
   },
   "repository": {
     "type": "git",
