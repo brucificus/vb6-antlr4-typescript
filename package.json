@@ -1,6 +1,6 @@
 {
   "name": "vb6-antlr4",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "",
   "files": [
     "lib/**/*"
@@ -14,11 +14,12 @@
     "build.tsc": "tsc",
     "build": "npm run build.cpygrammars && npm run build.antlr4ts && npm run build.tsc",
     "prepublishOnly": "npm run build && npm run test",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brucificus/vb6-antlr4-typescript.git"
+    "url": "https://github.com/brucificus/vb6-antlr4-typescript.git"
   },
   "author": "Bruce Markham",
   "license": "ISC",
