@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/brucificus/vb6-antlr4-typescript#readme",
   "devDependencies": {
+    "@semantic-release/git": "^9.0.0",
     "antlr4ts-cli": "^0.5.0-alpha.3",
     "cpy-cli": "^3.1.0",
     "rimraf": "^3.0.2",
