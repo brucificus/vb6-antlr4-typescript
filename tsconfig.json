@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./lib",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["index.ts", "antlr4ts_out"],
+  "exclude": ["node_modules", "proleap-vb6", "**/__tests__/*"]
+}
