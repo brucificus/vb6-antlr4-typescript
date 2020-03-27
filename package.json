@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/brucificus/vb6-antlr4-typescript#readme",
   "devDependencies": {
+    "@commitlint/core": "^8.3.5",
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/github": "^7.0.5",
     "antlr4ts-cli": "^0.5.0-alpha.3",
