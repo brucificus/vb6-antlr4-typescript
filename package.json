@@ -7,7 +7,7 @@
   ],
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "jest",
     "build.cpygrammars": "cpy proleap-vb6/src/main/antlr4/io/proleap/vb6/*.g4 ./antlr4ts_out/",
     "build.antlr4ts": "antlr4ts -visitor antlr4ts_out/*.g4",
     "postbuild.antlr4ts": "rimraf antlr4ts_out/*.g4",
