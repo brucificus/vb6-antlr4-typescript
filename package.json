@@ -1,0 +1,69 @@
+{
+  "name": "TEMPLATE-antlr4",
+  "version": "0.0.0-development",
+  "description": "A TEMPLATE lexer & parser that provides both visitor and listener patterns to traverse the parse tree.",
+  "files": [
+    "lib/**/*"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "build.cpygrammars": "cpy grammars/TEMPLATE/*.g4 ./antlr4ts_out/",
+    "build.antlr4ts": "antlr4ts -visitor antlr4ts_out/*.g4",
+    "postbuild.antlr4ts": "rimraf antlr4ts_out/*.g4",
+    "build.tsc": "tsc",
+    "build": "npm run build.cpygrammars && npm run build.antlr4ts && npm run build.tsc",
+    "prepublishOnly": "npm run build && npm run test",
+    "postversion": "git push && git push --tags",
+    "semantic-release": "semantic-release --debug",
+    "semantic-release-dry-run": "semantic-release --dry-run --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brucificus/TEMPLATE-antlr4-typescript.git"
+  },
+  "author": "TEMPLATE, Bruce Markham",
+  "license": "TEMPLATE",
+  "bugs": {
+    "url": "https://github.com/brucificus/TEMPLATE-antlr4-typescript/issues"
+  },
+  "homepage": "https://github.com/brucificus/TEMPLATE-antlr4-typescript#readme",
+  "keywords": [
+    "TEMPLATE",
+    "lexer",
+    "parser",
+    "antlr",
+    "antlr4",
+    "antlr4ts"
+  ],
+  "devDependencies": {
+    "@commitlint/core": "^8.3.5",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.5",
+    "@types/jest": "^25.1.4",
+    "antlr4ts-cli": "^0.5.0-alpha.3",
+    "commitlint-config-gitmoji": "^1.0.1",
+    "cpy-cli": "^3.1.0",
+    "cz-gitmoji": "0.0.7",
+    "husky": "^4.2.3",
+    "jest": "^25.2.3",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^17.0.4",
+    "semantic-release-gitmoji": "^1.3.3",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "antlr4ts": "^0.5.0-alpha.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-gitmoji"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
