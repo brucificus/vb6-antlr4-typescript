@@ -1,6 +1,6 @@
 # vb6-antlr4
 
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=foxguardsolutions/Foundation)](https://dependabot.com)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=brucificus/vb6-antlr4-typescript)](https://dependabot.com)
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/vb6-antlr4)
 ![npm latest release](https://img.shields.io/npm/v/vb6-antlr4/latest)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](./LICENSE.txt)
