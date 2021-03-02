@@ -1,6 +1,6 @@
 {
   "name": "vb6-antlr4",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "description": "A Visual Basic 6 lexer & parser that provides both visitor and listener patterns to traverse the parse tree.",
   "files": [
     "lib/**/*"
