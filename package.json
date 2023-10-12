@@ -47,7 +47,7 @@
     "commitlint-config-gitmoji": "^2.1.2",
     "cpy-cli": "^3.1.0",
     "cz-gitmoji": "0.0.7",
-    "husky": "^7.0.1",
+    "husky": "^8.0.3",
     "jest": "^29.7.0",
     "rimraf": "^5.0.5",
     "semantic-release": "^17.0.4",
