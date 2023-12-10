@@ -1,0 +1,19 @@
+name: Dependabot reviewer
+
+on: pull_request_target
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  review-dependabot-pr:
+    name: Review Dependabot PR
+    runs-on: ubuntu-latest
+    steps:
+      - name: Review Dependabot PR
+        uses: pwshrc/actions-review-dependabot@v0.6.3
+        with:
+          github_token: "${{ secrets.GITHUB_TOKEN }}"
+          required-pr-user-login: 'dependabot[bot]'
+          merge-mode: 'rebase'
