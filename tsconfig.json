@@ -1,12 +1,15 @@
 {
+  "extends": "@tsconfig/node16/tsconfig.json",
+
   "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs",
-    "declaration": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node10",
+
     "outDir": "./lib",
-    "strict": true,
-    "esModuleInterop": true
+    "declaration": true,
+    "sourceMap": true,
   },
+
   "include": ["index.ts", "antlr4ts_out"],
   "exclude": ["node_modules", "proleap-vb6", "tests/**"]
 }
