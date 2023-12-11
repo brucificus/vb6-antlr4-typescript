@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   extends: ["./node_modules/commitlint-config-gitmoji"],
   parserPreset: {
     parserOpts: {
