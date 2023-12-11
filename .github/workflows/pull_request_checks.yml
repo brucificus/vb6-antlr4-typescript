@@ -22,10 +22,10 @@ jobs:
           server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
           settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-      - name: Use Node.js 16.x
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v1
         with:
-          node-version: 16.x
+          node-version: 20.x
 
       - name: npm ci
         run: |
