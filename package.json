@@ -9,8 +9,8 @@
   "scripts": {
     "prepare": "husky install",
     "test": "jest",
-    "build.cpygrammars": "cpy \"./proleap-vb6/src/main/antlr4/io/proleap/vb6/VisualBasic6.g4\" ./antlr4ts_out",
-    "build.antlr4ts": "antlr4ts -visitor \"./antlr4ts_out/VisualBasic6.g4\"",
+    "build.cpygrammars": "cpy \"./proleap-vb6/src/main/antlr4/io/proleap/vb6/*.g4\" --flat ./antlr4ts_out",
+    "build.antlr4ts": "cd ./antlr4ts_out/ && antlr4ts -visitor \"VisualBasic6.g4\"",
     "postbuild.antlr4ts": "rimraf \"./antlr4ts_out/VisualBasic6.g4\"",
     "build.tsc": "tsc",
     "build": "npm run build.cpygrammars && npm run build.antlr4ts && npm run build.tsc",
