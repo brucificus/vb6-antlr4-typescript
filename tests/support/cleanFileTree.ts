@@ -3,8 +3,10 @@
  * anymore
  */
 export function cleanFileTree(input: string): string {
-    const inputNoEscapedNewline: string = input.replace(/\\r/g, "").replace(/\\n/g, "").replace(/\\t/g, "");;
-    const inputNoNewline: string = inputNoEscapedNewline.replace(/\r?\n|\r/g, "");
-    const inputReducedWhitespace: string = inputNoNewline.replace(/[\s]+/g, " ").replace(/[\s]+\)/, ")");
-    return inputReducedWhitespace;
+    let result = input.trim();
+    result = result.replace(/\\t/gm, " ");
+    result = result.replace(/(\s+((\\r)?(\\n)|(\\r))?)+/gm, " ");
+    result = result.replace(/(\s+(\r?\n|\r)?)+/gm, " ");
+    result = result.replace(/(\s+\))+/gm, ")");
+    return result;
 }
